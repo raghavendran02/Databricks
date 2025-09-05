@@ -1,0 +1,70 @@
+DB_Assignment-Day-1
+
+
+PART-1
+1. What is big data?
+2. what are the problems with big data?
+3. what is apache hadoop?
+4. what are the components of apache hadoop?
+5. what is spark?
+6. what are the languages supported by spark
+7. basic data structure in spark?
+8. how does spark support fault tolerance
+9. what is databricks
+10. define:
+	a) Data warehouse
+	b) Dale Lake
+	c) Data lakehouse
+11. what are delta tables are databricks. list its benifits?
+12. which is the path of table data on databricks
+13. which command creates a directory A/B/C in DBFS
+
+PART-2:
+
+1. create table product_info with the below structure:
+
+	product_id INT,
+	product_name STRING,
+	category STRING,
+	price DOUBLE,
+	quantity INT
+
+2. Insert 1 row with values: 1, 'Winter Jacket', 'Clothing', 79.95, 100
+3. Insert 3 rows with values:
+(2, 'Microwave', 'Kitchen', 249.75, 30),
+ (3, 'Board Game', 'Toys', 29.99, 75),
+ (4, 'Smartcar', 'Electronics', 599.99, 50);
+
+3. Display the data from product_info table
+
+4. find out the provider of the table?
+
+5. find out whether the table is managed or external
+
+6. Display the contents of the table folder
+
+7. update the table  and increase price by 10 for product_id 3
+
+8. check the table folder and observe the parquet files
+
+9. describe detail the table product_info nd describe history
+
+10. which format will the delta logs be stored. Display the contents of the delta log folder of the table and display the contents of one the delta logs
+
+11. Query the table product_info as of version 2
+
+12. Delete the table product table
+
+13. Restore the product table to version 3
+
+14. what are the other ways to travel back other than specifying the version number
+
+15. now check the product_info table and check its history
+
+16. optimize product_info by product_id and check the history
+
+17. implement the vacuum command to ensure that all the unnecessary files marked for deletion are removed. What is the default retention period where the files marked for deletion are retained?
+
+18. Which parameter do you use to enable/disable duration check of retention period
+
+19. drop the table and describe, Also do check the table folder. Does the file exist?

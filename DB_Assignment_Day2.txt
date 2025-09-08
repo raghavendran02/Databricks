@@ -1,0 +1,23 @@
+DB_Assignment_Day2:
+Objectives:
+1. understanding creating tables without schema
+2. Understanding creating schema with and without location
+3. Understanding managed and external tables
+
+--------------------------------------------------------------------------------------------------------------
+
+1. create a delta table in default database, managed_default with columns: country, code, dial_code
+2. insert values into the table 'France', 'Fr', '+33'
+3. find the location of the managed_default table
+4. create an external delta table, external_default as mentioned above in 1 and insert the values as mentioned in 2
+5. describe the properties of external_default tables and fetch the location of the external delta table
+6. drop both the tables and observe in which scenario the data remains
+7. create a schema new_default without specifying location and get its location
+8. create a managed delta table in the database new_default, managed_new_default with columns: country, code, dial_code, insert values 'France', 'Fr', '+33'
+9. Create an external delta table same as above with name external_new_default
+10. Describe both the table and fetch the locations. Observe how the external table overrides the table location against the location of the database
+11. drop both the tables and observe what remains and what's lost
+12. create a schema: custom by specifying location and describe the schema
+13. create a managed and an external table with structure and values mentioned in 1 and 2
+14. describe both the tables and understand the locations
+15. drop both the tables and observe what's lost and what remains

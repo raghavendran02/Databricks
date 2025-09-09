@@ -1,0 +1,28 @@
+1.By Querying files find out:
+	1. Get the Total records while querying the files of yellow trip data
+	2. Get the count of passenger > 1 while querying files of yellow trip data
+	3.In May green trip file how many trips has distance greater than 5 miles
+	4. Get the PaymentID for "disputed" payment type
+	5. Total number of passengers travelled in green taxi which are captured only in the csv files
+2. Create a CSV non-delta table for green trip dataset, by inferring schema
+3. Create a CSV non-delta table for green trip dataset, manually specifying the schema
+4. create a json delta table for payment types dataset
+5. create a managed delta table by querying the json file payment types
+6. create a managed delta table for green trip csv dataset using read_files
+7. create a managed delta table for ratecodes using a csv non delta table
+8. create an external delta table for green trip csv using read_files
+9. create an external delta table by querying the taxiZones dataset
+10. find how many parquet files in the delta table yellowtrip_parsed_delta, otpimize it based on vendorID. how many files does it result in?
+----------------------------------------------
+views:
+1. create a csv non delta table for green trip dataset
+2. use 1 to create a temp view for all passengers with passenger_count >0, trip_distance >0, fare_amout > 0.0, pick up and drop location is not null
+3. use 2 to find out:
+	1. count of passengers where pickup and drop is in year 2019
+	2. total fare amount
+	3. Month wise total passengers
+	4. Avg trip distance for every vendor
+	5. total fare amount for every payment type
+4. create a global temp view for taxi zones dataset and create a delta table from that view
+5. create a view of payment types dataset and create an external delta table from that view
+6. create a CTE to calculate the time travelled in hours for green trip dataset(use 1. for this) and find out total time in hours travelled for every vendor
